@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LeadFlow OSS Engine">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#ff8a5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+  <path fill="url(#g)" d="M18 42c8-18 20-22 28-22v6c-6 0-14 2-22 16l-6-4zm8-18c6-8 14-10 20-10v6c-4 0-10 2-14 10l-6-6z"/>
+  <circle cx="44" cy="22" r="5" fill="url(#g)"/>
+</svg>
