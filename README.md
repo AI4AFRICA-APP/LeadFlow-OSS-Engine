@@ -12,6 +12,24 @@
 
 ---
 
+## Why the first email actually lands
+
+This is not a mail-merge with `{FirstName}`. For each prospect, the engine pulls **real signals** (what they do, where they operate, friction you can infer) and writes a **clean, one-to-one style message** — the kind that reads like you already looked them up, not like a blast template.
+
+- **Qualified framing** — leads come with context (industry, location, suggested gaps, fit score) so the draft can reference something specific instead of generic fluff.
+- **Your voice, your offer** — you define agency/product context in code (`BUSINESS_CONTEXT` in `geminiService.ts`), so every line still sounds like *your* brand.
+- **Human-shaped copy** — prompts are tuned for direct, conversational email (no obvious “AI brochure” tells); you edit before send in **Manual**, or review the side panel in **Automatic**.
+
+You still own the send: review, tweak one line, then dispatch. That is how you keep volume **and** quality.
+
+---
+
+## Screenshots & demo video
+
+**Coming soon** — product screenshots and a short walkthrough video will be added here. If you are browsing the repo before those ship, clone and run locally (`npm install` → fill `.env` → `npm run dev`) for the full UI.
+
+---
+
 ## What this app does (in order)
 
 Think of it as a small pipeline: **discover → enrich → draft → send → persist**.
@@ -20,7 +38,7 @@ Think of it as a small pipeline: **discover → enrich → draft → send → pe
 
 1. You set **location** (city/country) and **niche** (industry), then run search (or let auto-mode pick regions).
 2. The app calls **Gemini with Google Search** to return a batch of businesses (names, sites, gaps, fit score, etc.).
-3. Each result becomes a **lead** with a **personalized draft** email body and optional **email / phone** if the model finds them.
+3. Each result becomes a **lead** with a **tailored outreach draft** (written as if you know their business — not a generic mail merge) plus optional **email / phone** when the model can surface them.
 4. New leads land in the **New leads** section of the pipeline (newest first).
 
 ### Step 2 — Deep enrich (optional, per lead)
