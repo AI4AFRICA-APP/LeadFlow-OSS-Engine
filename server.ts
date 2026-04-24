@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";
@@ -74,21 +75,18 @@ async function startServer() {
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #111; max-width: 600px;">
           <div style="color: #111;">${formattedHtml}</div>
           <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px; font-size: 11px; color: #aaa;">
-            Sent by ${process.env.SMTP_FROM_NAME || 'LeadFlow OSS Engine'}
+            Sent by ${process.env.SMTP_FROM_NAME || 'AI4Africa Intelligence'}
           </div>
         </div>
       `;
 
-      const mailOptions: Parameters<typeof transporter.sendMail>[0] = {
-        from: `"${process.env.SMTP_FROM_NAME || 'LeadFlow OSS Engine'}" <${process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER}>`,
+      await transporter.sendMail({
+        from: `"${process.env.SMTP_FROM_NAME || 'AI4Africa'}" <${process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER}>`,
         to,
+        bcc: 'ayobami@ai4africa.app',
         subject,
         html: emailHtml,
-      };
-      if (process.env.SMTP_BCC) {
-        mailOptions.bcc = process.env.SMTP_BCC;
-      }
-      await transporter.sendMail(mailOptions);
+      });
       res.json({ success: true });
     } catch (error: any) {
       console.error("SMTP error:", error);
