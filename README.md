@@ -26,7 +26,15 @@ You still own the send: review, tweak one line, then dispatch. That is how you k
 
 ## Screenshots & demo video
 
-**Coming soon** — product screenshots and a short walkthrough video will be added here. If you are browsing the repo before those ship, clone and run locally (`npm install` → fill `.env` → `npm run dev`) for the full UI.
+![LeadFlow dashboard screenshot](public/video_demo_screenshot.png)
+
+Watch a quick walkthrough:
+
+<video src="public/video_demo.mp4" controls autoplay muted playsinline width="960">
+  Your browser does not support the video tag.
+</video>
+
+If the embedded video does not render in your viewer, open it directly: [`public/video_demo.mp4`](public/video_demo.mp4).
 
 ---
 
