@@ -30,11 +30,9 @@ You still own the send: review, tweak one line, then dispatch. That is how you k
 
 Watch a quick walkthrough:
 
-<video src="public/video_demo.mp4" controls autoplay muted playsinline width="960">
-  Your browser does not support the video tag.
-</video>
+![LeadFlow demo preview](public/video_demo.gif)
 
-If the embedded video does not render in your viewer, open it directly: [`public/video_demo.mp4`](public/video_demo.mp4).
+For full quality, open the original video: [`public/video_demo.mp4`](public/video_demo.mp4).
 
 ---
 
