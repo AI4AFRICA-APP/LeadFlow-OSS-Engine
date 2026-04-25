@@ -222,4 +222,4 @@ Apache-2.0 — SPDX headers in source files.
 
 ---
 
-*LeadFlow OSS Engine is a community template: fork it, change prompts and branding, plug in your database when you outgrow JSON.*
+*LeadFlow OSS Engine is a community template: fork it, change prompts and branding, plug in your database when you outgrow JSON..*
